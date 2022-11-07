@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+$maxWidth: 1920;
+$minWidth: 320;
+
+$breakpoints: (
+  'phone': 400px,
+  'phone-wide': 480px,
+  'phablet': 560px,
+  'tablet-small': 640px,
+  'tablet': 768px,
+  'tablet-wide': 1024px,
+  'desktop': 1248px,
+  'desktop-wide': 1440px,
+);
+
+$z-indexes: (
+  'outdated-browser',
+  'modal',
+  'site-header',
+  'page-wrapper',
+  'site-footer'
+);
+
+$colors: (
+  'white': #ffffff,
+  'white-text': #fef4f1,
+  'green': #00b997,
+  'black-text': #262626,
+  'gray-text': #606176,
+  'gray-bg': rgba(113, 113, 113, 0.48),
+  'gray-stroke': #797979,
+  'main-bg': #728fc2,
+  'blue-bg': #e8f1ff,
+  'blue-text': #2378ff,
+  'blue-light': #edf3ff,
+  'yellow-text': #f6c07a,
+  'yellow-light': #fef0c3,
+  'orange-bg': #f77e53,
+  'orange-light': #fee6dc,
+  'second': rgb(39, 202, 69),
+  'font': #ffffff,
+  'linkHover': rgb(21, 21, 21),
+  'overlay': rgba(0, 0, 0, 0.5),
+);
+
+$fonts: (
+  'primary': (
+    'Roboto',
+    sans-serif,
+  ),
+);
+
+$transition: (
+  'primary': (
+    all 300ms ease-in-out,
+  ),
+  'secondary': (
+    all 800ms,
+  ),
+);

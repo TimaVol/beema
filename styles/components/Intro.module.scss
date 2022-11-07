@@ -1,0 +1,78 @@
+@use '../core' as *;
+
+.Intro {
+  margin-bottom: 68px;
+  background-image: url('/intro-bg.png');
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 38px 0;
+    margin-bottom: 80px;
+    color: get($colors, 'white');
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-left: 10px;
+        @include adaptiv-font(24, 18);
+        font-weight: 500;
+      }
+    }
+
+    .btns {
+      display: flex;
+      button {
+        @include adaptiv-font(16, 13);
+      }
+
+      .login {
+        padding: 7px 13px;
+        margin-left: 16px;
+        background: transparent;
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin: 5px 0 75px;
+      font-weight: 900;
+      @include adaptiv-font(52, 48);
+      color: get($colors, 'green');
+    }
+
+    p {
+      margin-bottom: 64px;
+      @include adaptiv-font(43, 38);
+      font-weight: 500;
+      color: get($colors, 'white');
+      text-align: center;
+      line-height: 64px;
+    }
+
+    button {
+      margin-bottom: 152px;
+      @include adaptiv-font(22, 15);
+      font-weight: 700;
+    }
+
+    .linkToContent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 58px;
+      width: 58px;
+      margin-bottom: 30px;
+      border: 1px solid get($colors, 'gray-stroke');
+      background: get($colors, 'gray-bg');
+      border-radius: 100px;
+    }
+  }
+}
