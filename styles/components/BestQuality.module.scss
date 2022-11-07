@@ -1,0 +1,39 @@
+@use '../core' as *;
+
+.BestQuality {
+  margin-bottom: 213px;
+  h2 {
+    margin-bottom: 140px;
+    font-weight: 600;
+    text-align: center;
+    @include adaptiv-font(45, 30);
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    &:nth-child(3) {
+      flex-direction: row-reverse;
+    }
+
+    h3 {
+      @include adaptiv-font(40, 20);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .text {
+      max-width: 600px;
+      text-align: center;
+
+      p {
+        font-weight: 400;
+        color: get($colors, 'gray-text');
+
+        @include adaptiv-font(30, 15);
+      }
+    }
+  }
+}

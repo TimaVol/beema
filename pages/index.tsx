@@ -1,3 +1,5 @@
+import BestQuality from '../components/BestQuality'
+import Container from '../components/Container'
 import styles from '../styles/Home.module.scss'
 import Intro from './../components/Intro'
 
@@ -6,7 +8,11 @@ export default function Home() {
     <>
       <Intro />
 
-      <main id="main"></main>
+      <main id="main">
+        <Container>
+          <BestQuality />
+        </Container>
+      </main>
     </>
   )
 }
