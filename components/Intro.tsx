@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Arrow } from '../common/icons'
 import styles from '../styles/components/Intro.module.scss'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Intro() {
   return (
@@ -26,9 +26,9 @@ export default function Intro() {
 
         <button className="getStarted">Start your Project</button>
 
-        <Link href="#main" className={styles.linkToContent}>
+        <AnchorLink href="#main" className={styles.linkToContent}>
           <Arrow />
-        </Link>
+        </AnchorLink>
       </div>
     </div>
   )
