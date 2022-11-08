@@ -24,8 +24,8 @@ export default function About() {
 
         <Image
           src={'/rocket_launch_ 1.png'}
-          height="460"
-          width="670"
+          height="427"
+          width="579"
           alt="rocket_launch_ 1.png"
         />
       </div>

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Arrow } from '../common/icons'
 import styles from '../styles/components/Intro.module.scss'
 import AnchorLink from 'react-anchor-link-smooth-scroll'

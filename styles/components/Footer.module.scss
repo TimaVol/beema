@@ -22,10 +22,13 @@
 
     h2 {
       margin-bottom: 42px;
-      @include adaptiv-font(42, 35);
+      @include adaptiv-font(42, 26);
       font-weight: 500;
       text-align: center;
       line-height: 64px;
+      @include mq('phone-wide') {
+        line-height: 40px;
+      }
     }
 
     button {
@@ -43,6 +46,19 @@
       div {
         display: flex;
         align-items: center;
+
+        &:first-child {
+          @include mq('phone-wide') {
+            flex-direction: column;
+            align-items: flex-start;
+            a {
+              margin-bottom: 10px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
 
         a {
           margin-right: 20px;

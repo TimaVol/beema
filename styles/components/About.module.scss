@@ -6,13 +6,18 @@
     margin-bottom: 150px;
     font-weight: 600;
     text-align: center;
-    @include adaptiv-font(45, 30);
+    @include adaptiv-font(45, 28);
+    @include mq('tablet') {
+      margin-bottom: 50px;
+    }
   }
 
   .main {
     display: flex;
     align-items: center;
-
+    @include mq('tablet') {
+      flex-direction: column;
+    }
     .text {
       max-width: 566px;
       width: 100%;
@@ -20,6 +25,23 @@
       @include adaptiv-font(28, 15);
       p {
         margin-bottom: 48px;
+      }
+    }
+
+    img {
+      @include mq('tablet-wide') {
+        height: 330px;
+        width: 500px;
+      }
+
+      @include mq('phablet') {
+        height: 230px;
+        width: 400px;
+      }
+
+      @include mq('phone-wide') {
+        height: 160px;
+        width: 300px;
       }
     }
   }

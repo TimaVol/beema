@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Intro />
 
-      <main id="main">
+      <main className={styles.main} id="main">
         <Container>
           <BestQuality />
           <Reviews />

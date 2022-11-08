@@ -2,11 +2,18 @@
 
 .BestQuality {
   margin-bottom: 213px;
+  @include mq('tablet') {
+    margin-bottom: 90px;
+  }
   h2 {
     margin-bottom: 140px;
     font-weight: 600;
     text-align: center;
-    @include adaptiv-font(45, 30);
+    @include adaptiv-font(45, 28);
+
+    @include mq('tablet') {
+      margin-bottom: 60px;
+    }
   }
   .item {
     display: flex;
@@ -14,25 +21,63 @@
     justify-content: space-between;
     margin-bottom: 60px;
 
+    @include mq('tablet') {
+      flex-direction: column;
+    }
+
+    &:nth-child(2) {
+      img {
+        @include mq('phone-wide') {
+          height: 183px;
+          width: 291px;
+        }
+      }
+    }
+
     &:nth-child(3) {
       flex-direction: row-reverse;
+      @include mq('tablet') {
+        flex-direction: column;
+      }
+
+      img {
+        @include mq('phone-wide') {
+          height: 306px;
+          width: 291px;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      img {
+        @include mq('phone-wide') {
+          height: 183px;
+          width: 291px;
+        }
+      }
     }
 
     h3 {
       @include adaptiv-font(40, 20);
       margin-bottom: 20px;
       font-weight: 500;
+      @include mq('tablet') {
+        margin-bottom: 20px;
+      }
     }
 
     .text {
       max-width: 600px;
       text-align: center;
-
+      margin-right: 10px;
+      @include mq('tablet') {
+        margin-bottom: 20px;
+      }
       p {
         font-weight: 400;
         color: get($colors, 'gray-text');
 
-        @include adaptiv-font(30, 15);
+        @include adaptiv-font(30, 20);
       }
     }
   }

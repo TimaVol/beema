@@ -85,7 +85,7 @@ export default function Reviews() {
   const [mob, setMob] = useState(false)
 
   useEffect(() => {
-    setMob(window.matchMedia('(max-width: 560px)').matches)
+    setMob(window.matchMedia('(max-width: 640px)').matches)
   }, [])
   return (
     <div className={styles.Reviews}>
@@ -104,9 +104,11 @@ export default function Reviews() {
           ? reviews.map((reviews) => (
               <div className={styles.sliderSlide} key={Math.random()}>
                 <div className={styles.sliderItem} key={Math.random()}>
-                  <Quote />
+                  <div>
+                    <Quote />
 
-                  <p className={styles.text}>{reviews.text}</p>
+                    <p className={styles.text}>{reviews.text}</p>
+                  </div>
 
                   <div className={styles.userData}>
                     <Image
@@ -134,9 +136,11 @@ export default function Reviews() {
                 <div className={styles.sliderSlide} key={Math.random()}>
                   {reviews.map((item) => (
                     <div className={styles.sliderItem} key={Math.random()}>
-                      <Quote />
+                      <div>
+                        <Quote />
 
-                      <p className={styles.text}>{item.text}</p>
+                        <p className={styles.text}>{item.text}</p>
+                      </div>
 
                       <div className={styles.userData}>
                         <Image
