@@ -122,3 +122,17 @@ button {
     }
   }
 }
+
+.carousel {
+  max-width: 1150px;
+  padding-bottom: 50px;
+  .control-dots {
+    .dot {
+      background: get($colors, 'gray-light') !important;
+      box-shadow: none !important;
+      &.selected {
+        background: get($colors, 'gray-stroke');
+      }
+    }
+  }
+}
