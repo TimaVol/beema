@@ -1,0 +1,26 @@
+@use '../core' as *;
+
+.About {
+  margin-bottom: 60px;
+  h2 {
+    margin-bottom: 150px;
+    font-weight: 600;
+    text-align: center;
+    @include adaptiv-font(45, 30);
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+
+    .text {
+      max-width: 566px;
+      width: 100%;
+
+      @include adaptiv-font(28, 15);
+      p {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

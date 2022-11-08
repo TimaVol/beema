@@ -1,3 +1,4 @@
+import About from '../components/About'
 import BestQuality from '../components/BestQuality'
 import Container from '../components/Container'
 import Reviews from '../components/Reviews'
@@ -13,6 +14,7 @@ export default function Home() {
         <Container>
           <BestQuality />
           <Reviews />
+          <About />
         </Container>
       </main>
     </>
